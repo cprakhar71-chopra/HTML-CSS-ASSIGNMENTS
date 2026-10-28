@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Fix</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 100%;
+            padding: 20px;
+            border: 2px solid #2563eb;
+            overflow-wrap: anywhere;
+        }
+
+        .long-text {
+            overflow-wrap: anywhere;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <h1>Overflow Layout Fix</h1>
+
+        <article class="card">
+            <h2>Responsive Card</h2>
+
+            <p class="long-text">
+                ThisIsAnExtremelyLongWordWithoutSpacesToDemonstrateHowOverflowCanBePreventedOnSmallScreens.
+            </p>
+
+            <p>
+                The card adjusts to the available width and keeps long text
+                from breaking the page layout.
+            </p>
+        </article>
+    </main>
+
+</body>
+</html>

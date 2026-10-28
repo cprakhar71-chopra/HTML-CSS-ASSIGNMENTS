@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Design Tokens</title>
+
+    <style>
+        :root {
+            /* Colour tokens */
+            --primary-color: #1d4ed8;
+            --secondary-color: #0f172a;
+            --background-color: #f1f5f9;
+            --card-color: #ffffff;
+            --text-color: #334155;
+
+            /* Font-size tokens */
+            --font-small: 14px;
+            --font-medium: 18px;
+            --font-large: 32px;
+
+            /* Spacing tokens */
+            --space-small: 10px;
+            --space-medium: 20px;
+            --space-large: 30px;
+
+            /* Other design tokens */
+            --card-radius: 12px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: var(--space-large);
+        }
+
+        .card {
+            max-width: 600px;
+            margin: auto;
+            padding: var(--space-large);
+            background: var(--card-color);
+            border-radius: var(--card-radius);
+        }
+
+        h1 {
+            font-size: var(--font-large);
+            color: var(--primary-color);
+        }
+
+        p {
+            font-size: var(--font-medium);
+        }
+
+        .button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: var(--space-small) var(--space-medium);
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .note {
+            color: var(--secondary-color);
+            font-size: var(--font-small);
+        }
+    </style>
+</head>
+<body>
+
+    <main class="card">
+        <h1>My Design System</h1>
+
+        <p>This page uses CSS variables for reusable design values.</p>
+
+        <a href="#details" class="button">Learn More</a>
+
+        <p class="note" id="details">
+            Change the variables inside :root to update the design.
+        </p>
+    </main>
+
+</body>
+</html>

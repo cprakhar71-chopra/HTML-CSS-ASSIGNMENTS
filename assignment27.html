@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Card Designs</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            padding: 30px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 260px;
+            padding: 25px;
+        }
+
+        .card-one {
+            background: #dbeafe;
+            border-radius: 8px;
+        }
+
+        .card-two {
+            background: #dcfce7;
+            border-radius: 24px;
+        }
+
+        .card-three {
+            background: #fef3c7;
+            border-radius: 50px 10px 50px 10px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Three Card Variants</h1>
+
+    <main class="container">
+
+        <article class="card card-one">
+            <h2>Basic Card</h2>
+            <p>A simple card with a light blue background and small rounded corners.</p>
+        </article>
+
+        <article class="card card-two">
+            <h2>Rounded Card</h2>
+            <p>This card uses a green background and larger rounded corners.</p>
+        </article>
+
+        <article class="card card-three">
+            <h2>Creative Card</h2>
+            <p>This card uses an asymmetric border radius and a warm background.</p>
+        </article>
+
+    </main>
+
+</body>
+</html>

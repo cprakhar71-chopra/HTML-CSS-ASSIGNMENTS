@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 400px;
+            padding: 80px 30px;
+            background: #dbeafe;
+            overflow: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background: #93c5fd;
+            border-radius: 50%;
+            top: 40px;
+            right: 50px;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 600px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            color: #1e3a8a;
+            font-size: 42px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .hero a {
+            display: inline-block;
+            background: #1d4ed8;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="hero">
+
+        <div class="circle"></div>
+
+        <section class="hero-content">
+            <h1>Build Your Future With Coding</h1>
+
+            <p>
+                Learn web development, practise programming,
+                and create projects that demonstrate your skills.
+            </p>
+
+            <a href="#learn">Start Learning</a>
+        </section>
+
+    </main>
+
+    <section id="learn" style="padding: 30px;">
+        <h2>Start Your Journey</h2>
+        <p>Practise HTML, CSS, and JavaScript to build websites.</p>
+    </section>
+
+</body>
+</html>
