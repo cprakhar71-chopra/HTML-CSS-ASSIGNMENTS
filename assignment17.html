@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+```
+<h1>Job Application Form</h1>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <label for="website">Portfolio URL:</label>
+        <input type="url" id="website" name="website">
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Job Details</legend>
+
+        <label for="position">Position:</label>
+        <select id="position" name="position" required>
+            <option value="">Select position</option>
+            <option value="frontend">Frontend Developer</option>
+            <option value="backend">Backend Developer</option>
+            <option value="designer">Web Designer</option>
+        </select>
+        <br><br>
+
+        <label for="experience">Years of Experience:</label>
+        <input type="number" id="experience" name="experience" min="0" max="50">
+        <br><br>
+
+        <label for="salary">Expected Salary:</label>
+        <input type="number" id="salary" name="salary" min="0">
+        <br><br>
+
+        <p>Employment Type:</p>
+        <input type="radio" id="fulltime" name="employment" value="fulltime">
+        <label for="fulltime">Full-time</label>
+
+        <input type="radio" id="parttime" name="employment" value="parttime">
+        <label for="parttime">Part-time</label>
+
+        <input type="radio" id="internship" name="employment" value="internship">
+        <label for="internship">Internship</label>
+        <br><br>
+
+        <label for="skills">Select Your Skills:</label>
+        <select id="skills" name="skills" multiple size="4">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="java">Java</option>
+        </select>
+        <br><br>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        <br><br>
+
+        <label for="color">Choose a Portfolio Theme Color:</label>
+        <input type="color" id="color" name="color" value="#0000ff">
+        <br><br>
+
+        <label for="available">Available to Start:</label>
+        <input type="month" id="available" name="available">
+        <br><br>
+
+        <label for="rating">Self-Rated Skill Level:</label>
+        <input type="range" id="rating" name="rating" min="1" max="10">
+        <br><br>
+
+        <label for="message">Why should we hire you?</label>
+        <textarea id="message" name="message" rows="5" cols="40"></textarea>
+        <br><br>
+
+        <input type="checkbox" id="declaration" name="declaration" required>
+        <label for="declaration">I confirm that my information is accurate.</label>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Submit Application</button>
+    <button type="reset">Clear Form</button>
+
+</form>
+```
+
+</body>
+</html>
