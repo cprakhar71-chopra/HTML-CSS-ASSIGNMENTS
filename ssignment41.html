@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Breakpoints</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        header {
+            padding: 25px;
+            text-align: center;
+            background: #1e3a8a;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            flex: 1 1 250px;
+            max-width: 350px;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        /* Breakpoint 1: Tablets */
+        @media (max-width: 768px) {
+            header {
+                padding: 20px;
+            }
+
+            .container {
+                padding: 20px;
+                gap: 15px;
+            }
+
+            .card {
+                flex-basis: 220px;
+            }
+        }
+
+        /* Breakpoint 2: Mobile phones */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            .container {
+                padding: 12px;
+                gap: 12px;
+            }
+
+            .card {
+                flex-basis: 100%;
+                max-width: 100%;
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Student Portfolio</h1>
+        <p>Mobile, tablet and desktop layout</p>
+    </header>
+
+    <main class="container">
+        <article class="card">
+            <h2>About Me</h2>
+            <p>I am learning HTML and CSS.</p>
+        </article>
+
+        <article class="card">
+            <h2>My Skills</h2>
+            <p>HTML, CSS, Java and GitHub.</p>
+        </article>
+
+        <article class="card">
+            <h2>My Projects</h2>
+            <p>Portfolio and responsive website projects.</p>
+        </article>
+    </main>
+
+</body>
+</html>

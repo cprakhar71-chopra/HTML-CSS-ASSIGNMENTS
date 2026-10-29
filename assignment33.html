@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+
+```
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 25px;
+        font-family: Arial, sans-serif;
+        background: #f1f5f9;
+    }
+
+    h1 {
+        text-align: center;
+        color: #1e3a8a;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .product {
+        flex: 1 1 220px;
+        max-width: 280px;
+        padding: 20px;
+        background: white;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .product-icon {
+        font-size: 55px;
+    }
+
+    .price {
+        color: #15803d;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    button {
+        padding: 10px 18px;
+        background: #1d4ed8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+```
+
+</head>
+<body>
+
+```
+<h1>My Products</h1>
+
+<main class="products">
+
+    <article class="product">
+        <div class="product-icon">🎧</div>
+        <h2>Headphones</h2>
+        <p>Comfortable wireless headphones.</p>
+        <p class="price">₹999</p>
+        <button type="button">View Product</button>
+    </article>
+
+    <article class="product">
+        <div class="product-icon">⌚</div>
+        <h2>Smart Watch</h2>
+        <p>A stylish watch for everyday use.</p>
+        <p class="price">₹1,499</p>
+        <button type="button">View Product</button>
+    </article>
+
+    <article class="product">
+        <div class="product-icon">🎒</div>
+        <h2>Backpack</h2>
+        <p>A useful backpack for students.</p>
+        <p class="price">₹799</p>
+        <button type="button">View Product</button>
+    </article>
+
+    <article class="product">
+        <div class="product-icon">⌨️</div>
+        <h2>Keyboard</h2>
+        <p>A keyboard for work and study.</p>
+        <p class="price">₹699</p>
+        <button type="button">View Product</button>
+    </article>
+
+</main>
+```
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu Bar</title>
+
+```
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        background: #1e3a8a;
+        padding: 18px 30px;
+    }
+
+    .logo {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu a:hover {
+        color: #facc15;
+    }
+
+    @media (max-width: 500px) {
+        nav {
+            flex-direction: column;
+        }
+
+        .menu {
+            justify-content: center;
+            gap: 12px;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+
+```
+<nav>
+    <div class="logo">MyWebsite</div>
+
+    <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<main id="home" style="padding: 30px;">
+    <h1>Welcome to My Website</h1>
+    <p>This responsive navigation bar uses CSS Flexbox.</p>
+</main>
+```
+
+</body>
+</html>

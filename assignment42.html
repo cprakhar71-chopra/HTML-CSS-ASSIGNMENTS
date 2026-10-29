@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Audit</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #334155;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        header {
+            padding: 20px;
+            background: #1e3a8a;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(100% - 32px, 1000px);
+            margin: 30px auto;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            min-width: 0;
+            padding: 20px;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+        }
+
+        .card h2 {
+            overflow-wrap: anywhere;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Layout Audit</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container" id="home">
+        <h2 id="projects">My Projects</h2>
+
+        <div class="content">
+            <article class="card">
+                <h2>HTML and CSS Portfolio</h2>
+                <p>A responsive portfolio layout with flexible content.</p>
+            </article>
+
+            <article class="card">
+                <h2>Student Registration Form</h2>
+                <p>A basic HTML form that fits within its container.</p>
+            </article>
+        </div>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: student@example.com</p>
+        </section>
+    </main>
+
+</body>
+</html>

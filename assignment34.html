@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+
+```
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #1e293b;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 20px 7%;
+        background: #0f172a;
+        color: white;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        min-height: 450px;
+        padding: 60px 7%;
+        background: #dbeafe;
+    }
+
+    .hero-content {
+        flex: 1 1 280px;
+    }
+
+    .hero h1 {
+        color: #1e3a8a;
+        font-size: clamp(32px, 5vw, 52px);
+    }
+
+    .hero p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .hero-art {
+        flex: 1 1 220px;
+        text-align: center;
+        font-size: clamp(80px, 15vw, 150px);
+    }
+
+    .button {
+        display: inline-block;
+        padding: 13px 22px;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 7px;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            justify-content: center;
+        }
+
+        .hero {
+            text-align: center;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+
+```
+<header>
+    <div class="logo">CodeStart</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Learn. Build. Grow.</h1>
+
+            <p>
+                Start your web development journey with HTML and CSS.
+                Build responsive websites and improve your coding skills.
+            </p>
+
+            <a class="button" href="#courses">Explore Courses</a>
+        </div>
+
+        <div class="hero-art" aria-label="Laptop illustration">💻</div>
+    </section>
+
+    <section id="about" style="padding: 30px 7%;">
+        <h2>About Us</h2>
+        <p>We practise web development by creating useful projects.</p>
+    </section>
+
+    <section id="courses" style="padding: 30px 7%;">
+        <h2>Our Courses</h2>
+        <p>HTML, CSS, JavaScript, and programming fundamentals.</p>
+    </section>
+
+    <section id="contact" style="padding: 30px 7%;">
+        <h2>Contact</h2>
+        <p>Email: student@example.com</p>
+    </section>
+</main>
+```
+
+</body>
+</html>

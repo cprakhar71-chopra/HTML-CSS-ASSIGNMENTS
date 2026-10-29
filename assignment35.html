@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Landing Page</title>
+
+```
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f8fafc;
+        color: #334155;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 20px 7%;
+        background: #1e3a8a;
+        color: white;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 330px;
+        padding: 40px 20px;
+        background: #dbeafe;
+    }
+
+    .hero-content {
+        max-width: 700px;
+    }
+
+    .hero h1 {
+        font-size: clamp(32px, 5vw, 48px);
+        color: #1e3a8a;
+    }
+
+    .hero p {
+        line-height: 1.7;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 12px 22px;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 7%;
+    }
+
+    .feature {
+        flex: 1 1 220px;
+        max-width: 330px;
+        padding: 25px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+        background: #0f172a;
+        color: white;
+    }
+
+    @media (max-width: 550px) {
+        header {
+            justify-content: center;
+        }
+
+        .hero {
+            min-height: 280px;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+
+```
+<header>
+    <div><strong>FlexStart</strong></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Build Something Amazing</h1>
+            <p>
+                Learn modern web design and create responsive websites
+                using HTML, CSS, and Flexbox.
+            </p>
+            <a href="#features" class="button">Explore Features</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <article class="feature">
+            <h2>Responsive</h2>
+            <p>The layout adjusts to different screen sizes.</p>
+        </article>
+
+        <article class="feature">
+            <h2>Flexible</h2>
+            <p>Flexbox helps arrange content in rows and columns.</p>
+        </article>
+
+        <article class="feature">
+            <h2>Simple</h2>
+            <p>Reusable styles keep the design consistent.</p>
+        </article>
+    </section>
+
+    <section id="about" style="padding: 25px; text-align: center;">
+        <h2>About This Project</h2>
+        <p>This landing page demonstrates responsive Flexbox layouts.</p>
+    </section>
+</main>
+
+<footer>
+    <p>FlexStart | HTML & CSS Assignment 35</p>
+</footer>
+```
+
+</body>
+</html>

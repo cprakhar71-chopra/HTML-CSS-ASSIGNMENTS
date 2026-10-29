@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Product Layout</title>
+
+```
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f8fafc;
+    }
+
+    .layout {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas:
+            "header header"
+            "sidebar content";
+        min-height: 100vh;
+    }
+
+    header {
+        grid-area: header;
+        padding: 20px;
+        background: #1e3a8a;
+        color: white;
+    }
+
+    aside {
+        grid-area: sidebar;
+        padding: 20px;
+        background: #dbeafe;
+    }
+
+    .content {
+        grid-area: content;
+        padding: 25px;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+        gap: 18px;
+    }
+
+    .product {
+        padding: 20px;
+        text-align: center;
+        background: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 10px;
+    }
+
+    .icon {
+        font-size: 45px;
+    }
+
+    @media (max-width: 650px) {
+        .layout {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "header"
+                "sidebar"
+                "content";
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+
+```
+<div class="layout">
+
+    <header>
+        <h1>Student Store</h1>
+    </header>
+
+    <aside>
+        <h2>Categories</h2>
+        <p>Electronics</p>
+        <p>Accessories</p>
+        <p>Study Items</p>
+    </aside>
+
+    <main class="content">
+        <h2>Products</h2>
+
+        <div class="products">
+            <article class="product">
+                <div class="icon">🎧</div>
+                <h3>Headphones</h3>
+                <p>₹999</p>
+            </article>
+
+            <article class="product">
+                <div class="icon">⌚</div>
+                <h3>Smart Watch</h3>
+                <p>₹1,499</p>
+            </article>
+
+            <article class="product">
+                <div class="icon">🎒</div>
+                <h3>Backpack</h3>
+                <p>₹799</p>
+            </article>
+
+            <article class="product">
+                <div class="icon">⌨️</div>
+                <h3>Keyboard</h3>
+                <p>₹699</p>
+            </article>
+        </div>
+    </main>
+
+</div>
+```
+
+</body>
+</html>
